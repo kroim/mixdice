@@ -1,0 +1,26 @@
+.copied-to-clipboard-message {
+  position: absolute;
+  z-index: 99;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  background-color: $white;
+  padding: 12px;
+  color: #000;
+  font-size: 10px;
+  width: 258px;
+  border-right: 2px;
+  &__icon {
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    &__title {
+      margin-bottom: 4px;
+    }
+    &__message {
+      color: #9c9c9c;
+    }
+  }
+}

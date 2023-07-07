@@ -1,0 +1,17 @@
+type Wallet {
+  address: String
+  privateKey: String
+  balance: Float
+}
+
+type DepositTransaction {
+  hash: String
+  amount: Float
+  status: Boolean
+  time: String
+  id: String
+  confirmations: Int
+  currency: String
+  address: String
+  username: String
+}

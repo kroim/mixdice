@@ -1,0 +1,18 @@
+stages:
+  - deployprod
+  - deploystaging
+before_script:
+  - apt-get update
+  - apt install sshpass -y
+deployprod:
+  stage: deployprod
+  script:
+    - sshpass -p "mix2019dice!" ssh -o StrictHostKeyChecking=no -t root@116.203.108.139 "cd mixdice && git pull && npm install && pm2 restart all"
+  only:
+    - master
+deploystaging:
+  stage: deploystaging
+  script:
+    - sshpass -p "mix2019dice!" ssh -o StrictHostKeyChecking=no -t root@116.203.108.139 "cd staging && git pull && npm install && pm2 restart all"
+  only:
+    - staging

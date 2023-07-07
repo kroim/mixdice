@@ -1,0 +1,30 @@
+.roll-buttons {
+  width: 100%;
+
+  &__container {
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__button {
+    &--low-button {
+    }
+    &--roll-button {
+      width: 104px;
+      height: 104px;
+      border-radius: 100%;
+      margin: 0 41px;
+      font-size: 18px;
+      //background-image: linear-gradient(to bottom, #c86dd7, #5923ae);
+      border: 0;
+    }
+    &--high-button {
+    }
+  }
+}
+@include media-breakpoint-down(xs) {
+  .roll-buttons {
+    &__button {
+      margin: 0 17px;
+    }
+  }
+}

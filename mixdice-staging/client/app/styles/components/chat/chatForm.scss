@@ -1,0 +1,33 @@
+.chat-form {
+  @include flex-center;
+  margin-top: auto;
+  padding: 10px 12px;
+  border-top: 2px solid $separator-color;
+  &__input {
+    background-color: #323442;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    outline: 0;
+    color: $white;
+    padding: 6px;
+    width: 100%;
+    font-size: 12px;
+    margin-right: 4px;
+    &:focus {
+      border-color: $active;
+    }
+  }
+  &__send-button {
+    &__icon {
+      & * {
+        fill: #485562;
+      }
+      &--active * {
+        fill: $active;
+      }
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.dropdown-menu {
+  .dropdown-item:first-of-type {
+    border-top-left-radius: $dropdown-border-radius;
+    border-top-right-radius: $dropdown-border-radius;
+  }
+  .dropdown-item:last-of-type {
+    border-bottom-left-radius: $dropdown-border-radius;
+    border-bottom-right-radius: $dropdown-border-radius;
+  }
+}
