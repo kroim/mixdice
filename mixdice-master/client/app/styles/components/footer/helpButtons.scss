@@ -1,0 +1,25 @@
+.help-button {
+  &__support,
+  &__chat {
+    z-index: 9;
+    font-size: 12px;
+    position: fixed;
+    left: 20px !important;
+    bottom: 20px !important;
+    width: 110px !important;
+    padding: 14px 7px !important;
+  }
+  &__chat {
+    right: 20px !important;
+    bottom: 20px !important;
+    left: auto !important;
+  }
+}
+@include media-breakpoint-down(sm) {
+  .help-button {
+    &__support,
+    &__chat {
+      display: none;
+    }
+  }
+}

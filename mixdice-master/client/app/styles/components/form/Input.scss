@@ -1,0 +1,16 @@
+.input-container {
+  position: relative;
+  svg {
+    position: absolute;
+    left: 18%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@include media-breakpoint-down(sm) {
+  .input-container {
+    svg {
+      display: none;
+    }
+  }
+}

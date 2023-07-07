@@ -1,0 +1,63 @@
+.tab-pane {
+  .form-group {
+    &:first-child {
+      margin: 50px 0 30px;
+    }
+
+    label {
+      color: $label;
+      font-size: 12.3px;
+      font-weight: bold;
+    }
+
+    .form-control {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid $input-border !important;
+      color: $white;
+      font-size: 14px;
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      &.no-padding {
+        padding: 0px;
+      }
+    }
+
+    .custom-checkbox {
+      .custom-control-label {
+        font-size: 13px;
+        color: $white;
+        font-weight: normal;
+
+        &:before {
+          background: $checkbox-bg;
+          border-color: $checkbox-border;
+        }
+      }
+    }
+
+    .nav-link {
+      float: right;
+      margin: -35px 0;
+    }
+  }
+
+  .nav-link {
+    margin: 30px 0 0;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    color: $active !important;
+  }
+}
+
+.btn-secondary {
+  margin: 40px 0 50px;
+  background: $active;
+  border: none;
+  width: 100%;
+  height: 50px;
+}
