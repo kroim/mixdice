@@ -1,0 +1,110 @@
+@mixin widthHeight($width, $height) {
+    width: $width;
+    height: $height;
+  }
+
+@mixin flex($display, $align-items, $justify-content ) {
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+
+.mobile{
+    // @include widthHeight(100%, 0);
+    width: 100%;
+    z-index: 5;
+}
+
+.header{
+    // @include widthHeight(414px, 60px);
+    display:flex;
+    margin-top:20px;
+}
+
+.image_Cashier{
+    margin-left: 2.5%;
+}
+
+.span_Cashier{
+    margin-left: 2.5%;
+}
+.button_Close{
+     margin-left: 78%
+}
+.depWith{
+    // height: 21px;
+    @include flex(flex, 0, space-around);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    // border-bottom: solid #3c4853 1px; 
+    // border-bottom: solid #5863fc 1px;
+}
+
+
+.depWithBlue{
+    text-align: center;
+ border-bottom: solid #5863fc 1px;
+ margin-bottom: 30px;
+ height: 60px;
+ width: 50%;
+}
+
+.depWithGrey{
+    text-align: center;
+    border-bottom: solid #3c4853 1px;
+    margin-bottom: 30px;
+    height: 60px;
+    width: 50%;
+   }
+
+.mainCont{
+    background-color: #21232e;
+    height: 650px;
+}
+
+// .foot{
+//     // @include widthHeight(414px, 78px);
+//     @include flex(flex, flex-end, space-around);
+//     flex-direction: row;
+// }
+
+.footText{
+    text-align: center;
+}
+
+.footText p{
+    margin-top: 8px
+}
+
+@media only screen and (max-width: 570px) {
+    .button_Close{
+      margin-left: 72%;  
+    }
+  
+    // .image_Cashier{
+    //   margin-left: 75%; 
+    // }
+  }
+  
+  @media only screen and (max-width: 490px) {
+    .button_Close{
+      margin-left: 70%;
+    }
+  }
+  
+  @media only screen and (max-width: 430px) {
+    .button_Close{
+      margin-left: 71%;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .button_Close{
+      margin-left: 69%;
+    }
+  }
+  @media only screen and (max-width: 355px) {
+    .button_Close{
+      margin-left: 65%;
+    }
+  }

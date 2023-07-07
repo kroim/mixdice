@@ -1,0 +1,105 @@
+.nav__brand,
+.nav__brand--full-logo {
+  background-image: url(../../public/assets/svg/logo-full.svg);
+  width: 141px;
+  height: 37px;
+}
+
+.nav__dropdown-balance__container {
+  padding-right: 6px;
+}
+.nav__dropdown-balance {
+  max-height: 200px;
+  overflow-y: scroll;
+}
+.header__navbar-toggle-container {
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border: 0 !important;
+  cursor: pointer;
+  display: none;
+}
+
+.header__navbar-toggle {
+  position: relative;
+  height: 100%;
+  &:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 34px;
+    background-color: $white;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 24px;
+    background-color: $white;
+    top: 58%;
+    left: calc(50% + 5px);
+    transform: translate(-50%, -50%);
+  }
+}
+.collapse.show .navbar__content-collapse-visible {
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 0 14vh 0;
+  flex-direction: column;
+  height: calc(100vh - 70px);
+  font-size: 16px;
+  z-index: 1;
+  svg {
+    transform: scale(1.2);
+  }
+  .dropdown-item {
+    font-weight: bold;
+    flex: 1;
+    padding: 0;
+    width: auto;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .header__navbar-toggle-container {
+    display: flex;
+  }
+}
+@include media-breakpoint-down(md) {
+  .navbar__content-collapse {
+    display: none;
+  }
+  .nav__brand {
+    background-image: url(../../public/assets/svg/logo.svg);
+    width: 34px;
+    height: 35px;
+  }
+  .nav__brand--full-logo {
+    background-image: url(../../public/assets/svg/logo-full.svg);
+    width: 141px;
+    height: 37px;
+  }
+  .navbar-collapse {
+    flex-grow: 1;
+  }
+  .navbar__content-collapse-visible {
+    background-color: $body-bg;
+    border-radius: 0;
+    margin: 0;
+    .dropdown-item {
+      text-align: center;
+    }
+  }
+  .collapse.show .navbar__content-collapse-visible {
+    display: flex !important;
+  }
+}
