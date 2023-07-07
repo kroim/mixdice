@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
+@import 'mixins';
+@import 'vendor/normalize';
+@import 'bootstrap/bootstrap';
+@import 'variables';
+@import 'components/containers/narrowContainer';
+@import 'components/navbar/navbar';
+@import 'components/footer/footer';
+@import 'components/crypto/btcProfit';
+@import 'components/crypto/btcAmount';
+@import 'components/bet/betAmount';
+@import 'components/bet/betStats';
+@import 'components/bet/rollButtons';
+@import 'components/bet/betSlider';
+@import 'components/editableCard';
+@import 'components/base-modal';
+@import 'components/base-tab';
+@import 'components/form';
+@import 'misc/scrollbar';
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#app {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: $footer-height;
+}
+input[type='number'].input--no-spin-buttons {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+}

@@ -1,0 +1,27 @@
+button {
+  svg {
+    margin: 0 4px 4px;
+  }
+}
+.dropdown-menu {
+  width: 100%;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+.navbar {
+  justify-content: space-between;
+}
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+.nav-link {
+  color: #fff !important;
+}
+.collapsing {
+  -webkit-transition: none;
+  transition: none;
+  display: none;
+}

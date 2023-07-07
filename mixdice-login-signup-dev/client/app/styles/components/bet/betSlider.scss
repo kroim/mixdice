@@ -1,0 +1,86 @@
+.bet-slider {
+  padding: 90px 2px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  &__meter {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  &__meter-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &--active &__indicator {
+      background-color: white;
+    }
+    &__label {
+    }
+    &__indicator {
+      border-radius: 100%;
+      width: 6px;
+      height: 6px;
+      margin-top: 18px;
+      background-color: #485562;
+      transition: 0.3s;
+    }
+  }
+  &__input {
+    position: absolute;
+    -webkit-appearance: none;
+    width: 91%;
+    background: transparent;
+    outline: none;
+    height: $bet-slider-height;
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 70px;
+      height: 70px;
+      background: $white;
+      background-image: url(../../public/assets/svg/vertical-hamburger.svg);
+      background-repeat: no-repeat;
+      background-position: 50% 74%;
+      cursor: pointer;
+      border-radius: 50%;
+      box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.27);
+      transition: 0.2s;
+      &:hover {
+        box-shadow: 0 10px 11px 0 rgba(0, 0, 0, 0.19);
+      }
+    }
+  }
+  &__track-container {
+    position: absolute;
+    width: 91%;
+
+    height: $bet-slider-height;
+  }
+  &__track {
+    position: absolute;
+    border-radius: 43px;
+    border: solid 3px #485562;
+    height: $bet-slider-height;
+    width: 100%;
+    background: #000;
+    &--left {
+      left: 0;
+      width: 50%;
+    }
+    &--right {
+      right: 0;
+      left: 0;
+    }
+    &--red {
+      background-color: $bet-slider-red;
+    }
+    &--green {
+      background-color: $bet-slider-green;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$font-size-base: 0.875rem;
+$white: #fff;
+$active: #5863fc;
+$deactive: #383838;
+$label: #6e6e6e;
+$input-border: #323442;
+$checkbox-bg: #3c4853;
+$checkbox-border: #45525f;
+$checkbox-size: 15px;
+
+$body-bg: #21232e;
+$body-color: $white;
+$primary: #323442;
+
+// link
+$link-color: #9c9c9c;
+$link-hover-color: #858585;
+
+// dropdown
+$dropdown-bg: $primary;
+$dropdown-link-hover-bg: red;
+$dropdown-font-size: 13px;
+$dropdown-padding-y: 10px;
+$dropdown-item-padding-y: 0.7rem;
+$dropdown-item-padding-x: 0.8rem;
+$dropdown-border-width: 0;
+$dropdown-border-radius: 8.8px;
+$dropdown-link-color: $white;
+$dropdown-link-hover-color: $white;
+$dropdown-link-hover-bg: darken($primary, 0.5);
+$dropdown-min-width: 0;
+
+// button
+$btn-border-radius: 21px;
+$btn-border-radius-lg: 21px;
+
+$btn-font-weight: bold;
+$input-btn-font-size: $font-size-base;
+$input-btn-font-size-lg: 12px;
+$input-btn-padding-y: 0.7rem;
+$input-btn-padding-x: 1.6rem;
+$input-btn-padding-y-lg: 0.7rem;
+$input-btn-padding-x-lg: 1.6rem;
