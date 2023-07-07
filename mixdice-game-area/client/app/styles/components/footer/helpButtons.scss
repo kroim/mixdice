@@ -1,0 +1,30 @@
+.help-buttons {
+  &__support,
+  &__chat {
+    z-index: 9;
+    font-size: 12px;
+    position: fixed;
+    left: 20px !important;
+    bottom: 20px !important;
+    width: 110px !important;
+    padding: 14px 7px !important;
+    cursor: pointer;
+  }
+  &__chat {
+    right: 20px !important;
+    bottom: 20px !important;
+    left: auto !important;
+    transition: $transition-base;
+    &--chat-opened {
+      right: calc(20px + #{$chat-width}) !important;
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .help-buttons {
+    &__support,
+    &__chat {
+      display: none;
+    }
+  }
+}

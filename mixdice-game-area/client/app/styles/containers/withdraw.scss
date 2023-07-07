@@ -1,0 +1,24 @@
+.withdraw {
+  &__form-control {
+    margin-top: 30px;
+  }
+  &__instructions-header {
+    margin-top: 30px;
+    font-weight: bold;
+  }
+  &__instructions {
+    padding: 10px;
+    font-size: 14px;
+  }
+  &__button {
+    margin-top: 10px;
+  }
+  &__confirm-link {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: $white;
+    text-decoration: underline;
+    margin: 10px 0 4px;
+  }
+}

@@ -1,0 +1,46 @@
+button {
+  svg {
+    margin: 0 4px 1px;
+  }
+  .btn-icon-sm {
+    display: none;
+  }
+  .btn-text-not-sm {
+    display: inline-block;
+  }
+}
+.dropdown-menu {
+  width: 100%;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+.navbar {
+  justify-content: space-between;
+  border-bottom: 1px solid #3c4853;
+  margin-bottom: 40px;
+}
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+.nav-link {
+  color: #fff !important;
+}
+.collapsing {
+  -webkit-transition: none;
+  transition: none;
+  display: none;
+}
+
+@include media-breakpoint-down(md) {
+  button {
+    .btn-icon-sm {
+      display: inline-block;
+    }
+    .btn-text-not-sm {
+      display: none;
+    }
+  }
+}

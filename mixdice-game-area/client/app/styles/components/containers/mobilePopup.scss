@@ -1,0 +1,60 @@
+.mobile-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $body-bg;
+  display: none;
+  overflow: scroll;
+  padding-bottom: $mobile-footer-height;
+  &__padded-container {
+    padding: 4px;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    padding-top: 22px;
+    padding-left: 10px;
+    &__icon {
+      transform: scale(1.2);
+    }
+    &__title {
+      font-size: 15px;
+      font-weight: bold;
+      margin-left: 14px;
+    }
+  }
+  &__close-icon {
+    position: absolute;
+    right: 16px;
+    top: 22px;
+    padding: 4px;
+  }
+  .nav {
+    &--with-margin {
+      padding-right: 54px;
+    }
+    .nav-link {
+      height: 68px;
+      @include flex-center;
+    }
+  }
+  .tab-content {
+    width: 100%;
+  }
+  .nav.nav-tabs {
+    width: 100%;
+    .nav-item {
+      .nav-link {
+      }
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .mobile-popup {
+    &--visible {
+      display: block;
+    }
+  }
+}

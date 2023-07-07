@@ -1,0 +1,25 @@
+.nav-tabs {
+  border-bottom: 1px solid $deactive !important;
+  li {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin: 0 !important;
+
+    .nav-link {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      border: none !important;
+      border-bottom: 1px solid $deactive !important;
+      color: $label !important;
+      font-weight: bold;
+      cursor: pointer;
+
+      &.active {
+        border-bottom: 1px solid $active !important;
+        color: $white !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.form-group {
+  position: relative;
+  margin-top: 20px !important;
+  &:first-child {
+    margin: 50px 0 30px;
+  }
+  &__input {
+    &__label {
+      color: $label;
+      font-size: 12.3px;
+      font-weight: bold;
+      &--light {
+        color: $white;
+      }
+    }
+    &__help-text {
+      margin-top: 21px !important;
+      &--light {
+        color: $white !important;
+      }
+    }
+  }
+  input.form-control {
+    padding-left: 0;
+    border: 0 !important;
+    border-bottom: 2px solid #3c4853 !important;
+    &:focus {
+      box-shadow: none;
+      border-bottom-color: $active !important;
+    }
+    &.is-invalid {
+      background: none;
+      border-bottom: 2px solid $red !important;
+    }
+    &[type='password'] {
+      padding-right: 70px;
+    }
+  }
+  &__password-button {
+    position: absolute;
+    right: 4px;
+    //top: 44%;
+    top: 32px;
+    color: $label;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 10px;
+    user-select: none;
+    text-transform: uppercase;
+  }
+}
