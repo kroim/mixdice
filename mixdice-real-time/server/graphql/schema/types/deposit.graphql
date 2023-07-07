@@ -1,0 +1,5 @@
+type Wallet {
+  address: String
+  privateKey: String
+  balance: Float
+}

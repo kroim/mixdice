@@ -1,0 +1,15 @@
+.rc-tooltip {
+  opacity: 1 !important;
+  &-arrow {
+    display: none;
+  }
+  &-inner {
+    font-size: 13px;
+    text-align: center !important;
+    padding: 14px 20px !important;
+    color: $red !important;
+    background-color: $primary !important;
+    border: 2px solid $red;
+    border-radius: 17px !important;
+  }
+}

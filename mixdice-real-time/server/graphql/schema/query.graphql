@@ -1,0 +1,15 @@
+type Query {
+  verifyToken(token: String!): User
+  getName(name: String!): String
+
+  # Currently authenticated user
+  me: User
+
+  # Get the current server seed
+  serverSeed: String
+
+  # Compute again the bet result with serverSeed, clientSeed and nonce
+  verifyBetResult(input: VerifyBetResultInput!): VerifyBetResultPayload
+    @isAuthenticated
+  betsHistory(input: BetHistoryInput!): BetHistoryPayload @isAuthenticated
+}

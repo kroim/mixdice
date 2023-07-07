@@ -1,0 +1,25 @@
+.bets-history-container {
+}
+.bets-history {
+  &__nav-tabs {
+    margin: 0 auto;
+    width: 622px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .bets-history-container {
+    display: none;
+  }
+  .home-mode-switch.btn-group .btn-lg {
+    padding: 12px 16px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .bets-history {
+    &__nav-tabs {
+      width: 100%;
+    }
+  }
+}

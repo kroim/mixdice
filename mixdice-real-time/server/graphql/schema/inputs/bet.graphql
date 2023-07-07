@@ -1,0 +1,19 @@
+input PlaceBetInput {
+  betAmount: String!
+  clientSeed: String!
+  targetValue: Float!
+  isUnder: Boolean!
+}
+input VerifyBetResultInput {
+  serverSeed: String!
+  clientSeed: String!
+  nonce: String!
+}
+input BetHistoryInput {
+  limit: Int
+  userId: String
+}
+
+input BetPlacedInput {
+  userId: String
+}

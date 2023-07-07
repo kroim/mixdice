@@ -1,0 +1,52 @@
+.crypto-address-input {
+  position: relative;
+  .copied-to-clipboard-message {
+    top: -28px;
+  }
+  &__container {
+    display: flex;
+
+    height: $cryptoAddressInputHeight;
+    border-radius: 8px;
+  }
+  &__label {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  &__icon {
+    flex: 1;
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top: 2px solid $separator-color;
+    border-bottom: 2px solid $separator-color;
+    border-left: 2px solid $separator-color;
+    @include flex-center;
+  }
+  &__input-container {
+    flex: 4;
+    height: 100%;
+    border-top: 2px solid $separator-color;
+    border-bottom: 2px solid $separator-color;
+    @include flex-center;
+    &__input {
+      width: 100%;
+      background-color: transparent;
+      border: 0;
+      height: 100%;
+      color: $white;
+      outline: 0;
+      padding: 10px 10px 10px 0;
+      font-size: 14px;
+    }
+  }
+  &__button {
+    flex: 2;
+    @include flex-center;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: $active;
+    cursor: pointer;
+  }
+}

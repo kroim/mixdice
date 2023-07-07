@@ -1,0 +1,15 @@
+.chat-header {
+  height: 40px;
+  @include flex-center;
+  &__item {
+    @include flex-center;
+    &__icon {
+      margin-right: 6px;
+    }
+    &__label {
+      color: $white;
+      font-size: 12.8px;
+      font-weight: bold;
+    }
+  }
+}

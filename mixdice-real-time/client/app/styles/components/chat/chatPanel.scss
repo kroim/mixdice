@@ -1,0 +1,30 @@
+.chat-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 150%;
+  border-left: 2px solid $separator-color;
+  transition: $transition-base;
+  display: flex;
+  flex-direction: column;
+  width: $chat-width;
+  &--visible {
+    left: calc(100% - #{$chat-width});
+  }
+}
+@include media-breakpoint-down(md) {
+  .chat-panel {
+    &--visible {
+      left: 150% !important;
+    }
+  }
+}
+@include media-breakpoint-down(lg) {
+  .chat-panel {
+    width: $chat-width-lg;
+    &--visible {
+      left: calc(100% - #{$chat-width-lg});
+    }
+  }
+}

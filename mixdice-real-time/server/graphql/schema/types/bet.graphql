@@ -1,0 +1,15 @@
+type Bet {
+  _id: ID!
+  isUnder: Boolean
+  targetValue: Float
+  betAmount: String
+  result: Float
+  clientSeed: String
+  serverSeed: String
+  serverSeedPlain: String
+  nonce: String
+  user: User
+  transactionAmount: String
+  currency: CurrencyEnum
+  createdAt: String
+}

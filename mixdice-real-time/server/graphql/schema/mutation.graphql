@@ -1,0 +1,10 @@
+type Mutation {
+  createUser(username: String!): User
+  login(email: String!, password: String!): User
+  setUserInfo(input: SetUserInfoInput!): User @isAuthenticated
+
+  placeBet(input: PlaceBetInput!): PlaceBetPayload @isAuthenticated
+  getWallet(username: String): Wallet @isAuthenticated
+  sendChatMessage(input: SendChatMessageInput!): SendChatMessagePayload
+    @isAuthenticated
+}
