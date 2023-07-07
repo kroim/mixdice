@@ -1,0 +1,8 @@
+type Query {
+  verifyToken(token: String!): User
+  getName(name: String!): String
+
+  verifyBetResult(input: VerifyBetResultInput!): VerifyBetResultPayload
+    @isAuthenticated
+  betsHistory(input: BetHistoryInput!): BetHistoryPayload @isAuthenticated
+}

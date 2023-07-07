@@ -1,0 +1,10 @@
+input UserInfoInput {
+  key: String
+  value: String
+}
+
+input UserInput {
+  email: String!
+  password: String!
+  confirm: String!
+}

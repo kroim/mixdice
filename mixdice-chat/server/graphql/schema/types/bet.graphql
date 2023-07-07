@@ -1,0 +1,12 @@
+type Bet {
+  _id: String
+  isUnder: Boolean
+  targetValue: Int
+  betAmount: String
+  result: Int
+  clientSeed: String
+  serverSeed: String
+  serverSeedPlain: String
+  nonce: String
+  user: User
+}

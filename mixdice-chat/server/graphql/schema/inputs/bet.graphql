@@ -1,0 +1,14 @@
+input PlaceBetInput {
+  betAmount: String!
+  clientSeed: String!
+  targetValue: Int!
+  isUnder: Boolean!
+}
+input VerifyBetResultInput {
+  serverSeed: String!
+  clientSeed: String!
+  nonce: String!
+}
+input BetHistoryInput {
+  limit: Int
+}

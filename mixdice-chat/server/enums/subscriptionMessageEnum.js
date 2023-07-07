@@ -1,0 +1,3 @@
+module.exports = {
+  CHAT_MESSAGE_POSTED: 'CHAT_MESSAGE_POSTED'
+};

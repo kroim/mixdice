@@ -1,0 +1,28 @@
+.balance-dropdown {
+  &__button-dropdown {
+    width: 100%;
+  }
+  &__label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  &__button {
+    border-radius: 8px !important;
+    background-color: transparent !important;
+    border: 2px solid $separator-color !important;
+    display: flex;
+    align-items: center;
+    margin: 0 !important;
+    height: 60px !important;
+  }
+  &__item-icon {
+    margin-right: 10px;
+  }
+  &__selected-icon {
+    transform: scale(1.1);
+    margin-right: 10px;
+  }
+  &__caret {
+    margin-left: auto;
+  }
+}

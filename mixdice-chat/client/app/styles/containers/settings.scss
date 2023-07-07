@@ -1,0 +1,16 @@
+.settings {
+  &__confirm-button-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__confirm-button {
+    margin-top: 15px;
+    margin-bottom: 0;
+    width: 30%;
+  }
+
+  &__form-group {
+    margin-bottom: 0 !important;
+  }
+}

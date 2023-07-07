@@ -1,0 +1,12 @@
+.btc-profit {
+  &__label {
+    font-weight: bold;
+  }
+  &__amount {
+    font-size: 14px;
+  }
+  &__icon {
+    margin-right: 4px;
+    transform: scale(0.8);
+  }
+}

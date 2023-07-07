@@ -1,0 +1,12 @@
+.narrow-container {
+  width: 720px;
+  margin: 0 auto;
+  &--wider {
+    width: 800px;
+  }
+}
+@include media-breakpoint-down(md) {
+  .narrow-container {
+    width: 100%;
+  }
+}
