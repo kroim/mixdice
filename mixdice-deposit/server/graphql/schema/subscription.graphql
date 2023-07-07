@@ -1,0 +1,6 @@
+type Subscription {
+  messagePosted: String
+  betPlaced(input: BetPlacedInput!): Bet
+  balanceChanged(input: BalanceChangedInput): Balance
+  depositHistoryChanged: [DepositTransaction]
+}

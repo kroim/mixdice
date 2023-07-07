@@ -1,0 +1,9 @@
+type PlaceBetPayload {
+  bet: Bet
+}
+type VerifyBetResultPayload {
+  result: Int
+}
+type BetHistoryPayload {
+  bet: [Bet]
+}

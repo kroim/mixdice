@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
+@import 'mixins';
+@import 'keyframes';
+@import 'vendor/normalize';
+@import 'bootstrap/variables';
+@import '~bootstrap/scss/bootstrap';
+@import '_variables';
+@import 'bootstrap/overrides';
+@import 'bootstrap/table-override';
+@import 'bootstrap/dropdown-overrides';
+@import 'components/containers/narrowContainer';
+@import 'components/containers/mobilePopup';
+@import 'components/navbar/navbar';
+@import 'components/footer/footer';
+@import 'components/footer/mobileFooter';
+@import 'components/footer/mobile-screens/bets';
+@import 'components/crypto/btcProfit';
+@import 'components/crypto/cryptoAddressInput';
+@import 'components/crypto/btcAmount';
+@import 'components/crypto/qrCode';
+@import 'components/crypto/balanceDropdown';
+@import 'components/crypto/copiedToClipboardMessage';
+@import 'components/bet/betAmount';
+@import 'components/bet/betStats';
+@import 'components/footer/helpButtons';
+@import 'components/bet/rollButtons';
+@import 'components/bet/betSlider';
+@import 'components/bet/betsHistoryBar';
+@import 'components/bet/betAmountInput';
+@import 'components/bet/betsHistory';
+@import 'components/editableCard';
+@import 'components/separator';
+@import 'components/base-tab';
+@import 'components/form/form';
+@import 'components/form/input';
+@import 'components/form/button';
+@import 'components/base-modal';
+@import 'components/chat/chatForm';
+@import 'components/chat/chatHeader';
+@import 'components/chat/chatContent';
+@import 'components/chat/chatMessageItem';
+@import 'components/chat/chatPanel';
+@import 'containers/withdraw';
+@import 'containers/settings';
+@import 'containers/transactions';
+@import 'screens/Home';
+@import 'misc/scrollbar';
+@import 'misc/rc-tooltip';
+
+html {
+  margin: 0;
+  padding: 0;
+
+  height: 100%;
+}
+#app {
+  position: relative;
+  min-height: 100%;
+}
+.content-wrapper {
+  position: relative;
+  transition: $transition-base;
+  width: 100%;
+  padding-bottom: $footer-height;
+
+  &--chat {
+    width: #{100 - $chat-width};
+  }
+}
+@include media-breakpoint-down(lg) {
+  .content-wrapper {
+    &--chat {
+      width: #{100 - $chat-width-lg};
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+  .content-wrapper {
+    &--chat {
+      width: 100%;
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  #app {
+    padding-bottom: $mobile-footer-height;
+  }
+}
+input[type='number'].input--no-spin-buttons {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+}
